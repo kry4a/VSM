@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная - Промышленная компания ВСМ</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="page-wrapper"> <!-- обертка для того, чтобы футер был прикреплен к низу экрана-->
+		<header class="big">
+			<div class="navbar navbar-fixed">
+				<div class="inner">
+					<nav class="topmenu">
+						<ul class="menu">
+							<li class="active"><a href="#">О компании</a></li>
+							<li class="has-submenu">
+					     		<a href="./pages/category.php">Продукция <b class="caret"></b></a>
+					     		<ul class="">
+					     			<li><a href="./pages/category.php">Серийная</a></li>
+					     			<li><a href="./pages/category.php">Заказная</a></li>
+					     			<li><a href="./pages/category.php">По ТЗ</a></li>
+					     			<li><a href="./pages/category.php">Аксессуары</a></li>
+					     		</ul>
+					    	</li>
+							<li><a href="./pages/texts.php">Применение</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="./pages/contacts.php">Контакты</a></li>
+							<li><a href="#">В наличии </a></li>
+							<li><a href="#">Форма заказа </a></li>
+							<li class="hermit"><a href="./pages/category.php"><span class="catalog">Каталог продукции</span></a></li>
+							<div class="clearfix"></div>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="inner">
+				<div class="logo">
+					<a href="/" title="Промышленная компания ВСМ">
+						<h1 role="logo" class="text-logo extrabold">Промышленная компания <span>ВСМ</span></h1>
+						<img class="img-logo" src="./img/vsm_logo.png"/>
+					</a>	
+				</div>
+				<div class="sublogo sublogo-text semibold">
+					<p><span class="extrabold">25 лет</span> опыта, воплощенного</p>
+					<p>в конкретные решения</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-main">
+			<div class="inner">
+				<div class="main">
+					<!--туточки начинается весь контент	-->
+					<section class="production">
+						<img src="./media/big_machine.jpg"/>
+							<div class="contents">
+							<h1>Производство <a class="title" href="./pages/category.php">аппаратов высокого давления</a><sup class="superscript">(АВД)</sup></h1>
+							<p>Собственное производство промышленных АВД с 1997 года. Большой выбор серийных моделей на складе. Изготовление агрегатов высокого и сверхвысокого давления по техническому заданию.</p>	
+						</div>
+						<div class="clearfix"></div>
+					</section>
+					<section class="services">
+						<div class="service tools">
+							<a class="title" href="#">Сервис</a>
+							<p>Наш сервисный центр выполняет высококвалифицированный ремонт и обслуживание аппаратов высокого давления в кратчайшие сроки. Свой склад запчастей и расходных аксессуаров.</p>
+							
+						</div>
+						<div class="service accesories">
+							<a class="title" href="#">Аксессуары</a>
+							<p>Всегда в наличии фильтры, шланги, дюзы, пистолеты, насадки. Связавшись с нами, Вы получите грамотную консультацию по применению или любым другим вопросам.</p>
+						</div>
+						<div class="clearfix"></div>
+					</section>
+					<section class="contacts">
+						<h2>Контактная информация</h2>
+						<ul class="tabs" id="tabs">
+							<li class="active"><a href="#tab1">центральный офис</a></li>
+							<li><a href="#tab2">сервисный центр</a></li>
+							<li class="slide"></li> <!-- для анимации-->
+						</ul>
+						<ul id="tabs-content" class="tabs-content">
+							<li id="tab1" class="active">
+								<div class="subli">
+							    	<div class="infoblock">
+							    		<p class="tele green"><span class="citycode">(812)</span><span class="telephone">327-30-62</span></p>
+							    		<p class="small">многоканальный</p>
+							    	</div>
+							    	<div class="infoblock">
+							    		<p class="email green"><a href="mailto:info@pkvsm.ru">info@pkvsm.ru</a></p>
+							    		<p class="small">информационный отдел</p>
+							    	</div>
+							    	<div class="infoblock">
+							    		<p class="address green">г. Санкт-Петербург,</p>
+							    		<p>ул. Некрасова д.60 пом. 44Н</p>
+							    	</div>
+							    	<div class="infoblock">
+							    		<a href="./pages/contacts.php" class="directions">схема проезда</a>
+							    	</div>
+						    	</div>
+						    </li>
+						    
+						    <li id="tab2">
+						    	<div class="subli">
+									<div class="infoblock">
+										<p class="tele green"><span class="citycode">(812)</span><span class="telephone">327-30-62</span></p>
+							    		<p class="small">многоканальный</p>
+									</div>
+							    	<div class="infoblock"><p class="email green"><a href="mailto:info@pkvsm.ru">service@pkvsm.ru</a></p>
+							    		<p class="small">сервисный центр</p>
+							    	</div>			        
+							    </div>
+							</li>
+						</ul>
+
+					</section>
+					<section class="regions">
+						<div class="regions-title">
+							<h2>Сегодня наша техника работает во всех регионах России и зарубежом</h2>
+							<p>Связавшись с нами по электронной почте или телефону Вы получите исчерпывающую информацию по интересующим Вас вопросам.</p>
+						</div>
+						<div class="regions-cart">
+							<img src="./media/cart.png"/>
+						</div>
+						<div class="clearfix"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="page-buffer"></div> <!-- буфер для того, чтобы футер был прикреплен к низу экрана-->
+	</div>
+	
+	<footer>
+		<div class="inner">
+			<div class="footer-left">
+				<div class="footer-inner">
+					<p class="footer-title">Промышленная компания «ВСМ»</p>
+					<p><a href="#">всм.рф</a> - все права защищены © 2014</p>
+				</div>
+			</div>
+			<div class="footer-main">
+				<div class="footer-inner">
+					<p> 191014, г. Санкт-Петербург ,ул. Некрасова д. 60 пом. 44Н  </p>
+					<p> (812) 327-30-62, (812) 719-70-51 info@pkvsm.ru </p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<div class="footer-inner">
+					<img src="http://placehold.it/190x70"/>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$('#tabs li a').click(function(e) {
+		   $('#tabs li.active').removeClass('active');
+		   $('#tabs-content li.active').removeClass('active');
+		   $(this).parent().addClass('active');
+		   var currentTab = $(this).attr('href');
+		   $(currentTab).addClass('active');
+		   e.preventDefault();
+		});
+	</script>
+</body>
+</html>
+
