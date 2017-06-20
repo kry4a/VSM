@@ -3,23 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Главная - Промышленная компания ВСМ</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="libs.css">
 	<link rel="stylesheet" href="bundle.css">
-	<link rel="stylesheet" href="css/normalize.css">
+	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="./js/html5shiv.js"></script>
 	<![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	
 </head>
 <body>
 	<div class="page-wrapper"> <!-- обертка для того, чтобы футер был прикреплен к низу экрана-->
-		<header class="big">
-			<div class="navbar navbar-fixed">
-				<div class="inner">
+		<header class="header header--big">
+			<div class="navbar navbar--fixed">
+				<div class="container">
 					<nav class="topmenu">
 						<ul class="menu">
-							<li class="active"><a href="#">О компании</a></li>
-							<li class="has-submenu">
+							<li class="menu__item active"><a href="#">О компании</a></li>
+							<li class="menu__item has-submenu">
 					     		<a href="./pages/category.php">Продукция <b class="caret"></b></a>
 					     		<ul class="">
 					     			<li><a href="./pages/category.php">Серийная</a></li>
@@ -28,34 +31,33 @@
 					     			<li><a href="./pages/category.php">Аксессуары</a></li>
 					     		</ul>
 					    	</li>
-							<li><a href="./pages/texts.php">Применение</a></li>
-							<li><a href="#">Сервис</a></li>
-							<li><a href="./pages/contacts.php">Контакты</a></li>
-							<li><a href="#">В наличии </a></li>
-							<li><a href="#">Форма заказа </a></li>
-							<li class="hermit"><a href="./pages/category.php"><span class="catalog">Каталог продукции</span></a></li>
+							<li class="menu__item" ><a href="./pages/texts.php">Применение</a></li>
+							<li class="menu__item"><a href="#">Сервис</a></li>
+							<li class="menu__item"><a href="./pages/contacts.php">Контакты</a></li>
+							<li class="menu__item"><a href="#">В наличии </a></li>
+							<li class="menu__item"><a href="#">Форма заказа </a></li>
+							<li class="menu__item menu__hermit"><a href="./\pages/category.php"><span class="catalog">Каталог продукции</span></a></li>
 							<div class="clearfix"></div>
 						</ul>
 					</nav>
 				</div>
 			</div>
-			<div class="inner">
+			<div class="container header__container">
 				<div class="logo">
 					<a href="/" title="Промышленная компания ВСМ">
-						<h1 role="logo" class="text-logo extrabold">Промышленная компания <span>ВСМ</span></h1>
-						<img class="img-logo" src="./img/vsm_logo.png"/>
+						<h1 role="logo" class="logo__text extrabold">Промышленная компания <span>ВСМ</span></h1>
+						<img class="logo__img" src="./img/vsm_logo.png"/>
 					</a>	
 				</div>
-				<div class="sublogo sublogo-text semibold">
-					<p><span class="extrabold">25 лет</span> опыта, воплощенного</p>
-					<p>в конкретные решения</p>
+				<div class="sublogo">
+					<p class="sublogo__text semibold">25 лет опыта, воплощенного</p>
+					<p class="sublogo__text semibold">в конкретные решения</p>	
 				</div>
 			</div>
 		</header>
-		<div class="container-main">
-			<div class="inner">
-				<div class="main">
-					<!--туточки начинается весь контент	-->
+		<main>
+			<div class="container container--main">
+				<div class="main col-xs-12">
 					<section class="production">
 						<img src="./media/big_machine.jpg"/>
 							<div class="contents">
@@ -64,13 +66,13 @@
 						</div>
 						<div class="clearfix"></div>
 					</section>
-					<section class="services">
-						<div class="service tools">
+					<section class="service row">
+						<div class="service__item service__item--tools col-sm-12 col-md-6">
 							<a class="title" href="#">Сервис</a>
 							<p>Наш сервисный центр выполняет высококвалифицированный ремонт и обслуживание аппаратов высокого давления в кратчайшие сроки. Свой склад запчастей и расходных аксессуаров.</p>
 							
 						</div>
-						<div class="service accesories">
+						<div class="service__item service__item--accesories col-sm-12 col-md-6">
 							<a class="title" href="#">Аксессуары</a>
 							<p>Всегда в наличии фильтры, шланги, дюзы, пистолеты, насадки. Связавшись с нами, Вы получите грамотную консультацию по применению или любым другим вопросам.</p>
 						</div>
@@ -116,7 +118,6 @@
 							    </div>
 							</li>
 						</ul>
-
 					</section>
 					<section class="regions">
 						<div class="regions-title">
@@ -130,12 +131,12 @@
 					</section>
 				</div>
 			</div>
-		</div>
+		</main>
 		<div class="page-buffer"></div> <!-- буфер для того, чтобы футер был прикреплен к низу экрана-->
 	</div>
 	
-	<footer>
-		<div class="inner">
+	<footer class="footer">
+		<div class="container">
 			<div class="footer-left">
 				<div class="footer-inner">
 					<p class="footer-title">Промышленная компания «ВСМ»</p>

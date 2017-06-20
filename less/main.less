@@ -1,3 +1,183 @@
-* {
-	color: #ffffff;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+	margin-bottom: -100px;
+	 min-height: 100%;
+
+}
+
+
+.page-buffer {
+    height: 100px;
+}
+
+.container {
+	padding-left: 60px;
+	padding-right: 60px;
+	&--main {
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+ 	  	padding-top:10px;	
+	}
+}
+
+/* header and footer */
+.header {
+	background: url("../img/bg_logo.jpg") no-repeat scroll center -147px #379e9a;
+	background-size: cover; 
+  	color:#fff;
+	&--big{
+		height: 405px;
+	}
+	&--small {
+		height: 165px;
+	}
+	&__container {
+		overflow: visible;
+		position:relative;
+		z-index: 999;
+	}
+
+	&__logo {
+		&--small {
+			position:relative;
+			float:left;
+			top:20px;			
+
+			.img-logo {
+				width: 260px;				
+			}
+
+			h1 {
+				display: none;
+			}
+		}
+	}
+}
+
+
+/* logo */
+
+
+.logo {
+	display: block;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 60px;
+
+	&__text {
+		color: #fff;
+		font-size: 27px;
+		padding-left: 50px;
+		padding-top: 10px;
+		text-align: center;
+		text-transform: uppercase;
+
+		span {
+			display:none;
+		}
+	}
+
+	&__img {
+		margin: 0 auto;
+		width:528px;
+		display:block; 	
+	}
+
+}
+
+.sublogo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 370px;
+	margin: auto;
+	text-align: center;
+	width: 620px;
+	z-index: 1000;	
+
+	&--big {
+
+	}
+
+	&--small {
+		float: left;
+		position: relative;
+		top: 30px;		
+	}
+
+	&__text {
+		margin:0;
+		padding:0;	
+		background: #168e7d;
+		color:#fff;
+		font-size:38px;
+
+		&:nth-child(2) {
+			line-height: 39px;
+			margin: 0 auto;
+			padding-bottom: 10px;
+			width: 480px;			
+		}
+	}
+}
+
+
+
+.footer {
+	background: #379e9a;
+}
+
+.catalog {
+	color:#ffffff;
+
+	&:before {
+		background: url("../img/sprites.png") repeat scroll 105px 96px rgba(0, 0, 0, 0);
+		content: "";
+		float: left;
+		height: 20px;
+		margin-left: -25px;
+		margin-top: 12px;
+		width: 20px;
+	}
+}
+
+
+/* sections at home */
+
+.production {
+	margin-top: 70px;
+	img {
+		float: left;
+		width: 250px;
+	}
+}
+.production, .services,.contacts {
+  margin-bottom:40px;
+}
+
+.service {
+	&__item {
+		width:400px;
+		display:inline-block;
+		margin-bottom: 10px;
+		padding-left: 72px;		
+		
+		p {
+			font-size: 15px;
+		}
+
+		&--tools {
+			background:url("../img/tools.png") no-repeat scroll;
+		}
+		&--accesories {
+			background:url("../img/acc.png") no-repeat scroll;
+		}
+	}
+
 }
