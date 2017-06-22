@@ -20,7 +20,7 @@ html, body {
 	padding-right: 60px;
 	&--main {
 		box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
- 	  	padding-top:10px;	
+ 	  	padding-top:80px;	
 	}
 }
 
@@ -30,7 +30,7 @@ html, body {
 	background-size: cover; 
   	color:#fff;
 	&--big{
-		height: 405px;
+		height: 350px;
 	}
 	&--small {
 		height: 165px;
@@ -68,7 +68,7 @@ html, body {
 	margin: 0 auto;
 	position: absolute;
 	right: 0;
-	top: 60px;
+	top: 70px;
 
 	&__text {
 		color: #fff;
@@ -85,20 +85,26 @@ html, body {
 
 	&__img {
 		margin: 0 auto;
-		width:528px;
+		width:500px;
 		display:block; 	
 	}
-
+		
+	&__link {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .sublogo {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 370px;
+	top: 330px;
 	margin: auto;
 	text-align: center;
-	width: 620px;
+	width: 430px;
 	z-index: 1000;	
 
 	&--big {
@@ -112,17 +118,21 @@ html, body {
 	}
 
 	&__text {
+		display: block;
 		margin:0;
 		padding:0;	
 		background: #168e7d;
 		color:#fff;
-		font-size:38px;
-
+		font-size:26px;
+		line-height: 35px;
+		vertical-align: middle;
+		
 		&:nth-child(2) {
-			line-height: 39px;
+			padding-bottom:5px;
+			
 			margin: 0 auto;
-			padding-bottom: 10px;
-			width: 480px;			
+			
+			width: 340px;			
 		}
 	}
 }
@@ -130,7 +140,23 @@ html, body {
 
 
 .footer {
-	background: #379e9a;
+	background: #007B6D;
+	&__container {
+		padding:60px;
+	}
+
+	&__content {
+		padding: 15px 0;
+		&:last-child {
+			border-top: 1px solid #ffffff;
+			padding-bottom: 0;
+		}
+	}
+
+	* {
+		color: #ffffff;	
+	}
+	
 }
 
 .catalog {
@@ -150,13 +176,6 @@ html, body {
 
 /* sections at home */
 
-.production {
-	margin-top: 70px;
-	img {
-		float: left;
-		width: 250px;
-	}
-}
 .production, .services,.contacts {
   margin-bottom:40px;
 }
