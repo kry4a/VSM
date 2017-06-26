@@ -17,31 +17,34 @@
 <body>
 	<div class="page-wrapper"> <!-- обертка для того, чтобы футер был прикреплен к низу экрана-->
 		<header class="header header--big">
-			<div class="navbar navbar--fixed">
+			<nav class="navbar navbar--fixed navbar--top">
 				<div class="container">
-					<nav class="topmenu">
-						<ul class="menu">
-							<li class="menu__item active"><a href="#">О компании</a></li>
-							<li class="menu__item has-submenu">
-					     		<a href="./pages/category.php">Продукция <b class="caret"></b></a>
-					     		<ul class="">
-					     			<li><a href="./pages/category.php">Серийная</a></li>
-					     			<li><a href="./pages/category.php">Заказная</a></li>
-					     			<li><a href="./pages/category.php">По ТЗ</a></li>
-					     			<li><a href="./pages/category.php">Аксессуары</a></li>
-					     		</ul>
-					    	</li>
-							<li class="menu__item" ><a href="./pages/texts.php">Применение</a></li>
-							<li class="menu__item"><a href="#">Сервис</a></li>
-							<li class="menu__item"><a href="./pages/contacts.php">Контакты</a></li>
-							<li class="menu__item"><a href="#">В наличии </a></li>
-							<li class="menu__item"><a href="#">Форма заказа </a></li>
-							<li class="menu__item menu__hermit"><a href="./\pages/category.php"><span class="catalog">Каталог продукции</span></a></li>
-							<div class="clearfix"></div>
+					<button class="navbar__toggler navbar-toggler--right" type="button" data-toggle="collapse" data-target="#topmenu" aria-controls="topmenu" aria-expanded="false" aria-label="Открыть меню">
+						<span class="navbar-toggler__icon"></span>
+					</button>
+					<a class="navbar__brand" href="#">ПК ВСМ</a>
+					<div class="collapse navbar__collapse" id="topmenu">
+						<ul class="navbar__nav nav">
+							<li class="nav__item">
+								<a class="nav__link nav__link--top nav__link--active" href="#">О компании</a>
+							</li>
+							<li class="nav__item dropdown">
+				     		<a class="nav__link nav__link--top dropdown-toggle" href="./pages/category.php">Продукция</a>
+				     		<ul class="nav nav__dropdown">
+				     			<li class="nav__item"><a class="nav__link" href="./pages/category.php">Серийная</a></li>
+				     			<li class="nav__item"><a class="nav__link" href="./pages/category.php">Заказная</a></li>
+				     			<li class="nav__item"><a class="nav__link" href="./pages/category.php">По ТЗ</a></li>
+				     			<li class="nav__item"><a class="nav__link" href="./pages/category.php">Аксессуары</a></li>
+				     		</ul>
+				    	</li>
+							<li class="nav__item"><a class="nav__link nav__link--top" href="./pages/texts.php">Применение</a></li>
+							<li class="nav__item"><a class="nav__link nav__link--top" href="#">Сервис</a></li>
+							<li class="nav__item"><a class="nav__link nav__link--top" href="#">В наличии </a></li>
+							<li class="nav__item"><a class="nav__link nav__link--top" href="./pages/contacts.php">Контакты</a></li>
 						</ul>
-					</nav>
+					</div>			
 				</div>
-			</div>
+			</nav>
 			<div class="container header__container">
 				<div class="logo">
 					<a class = "logo__link" href="/" title="Промышленная компания ВСМ">
