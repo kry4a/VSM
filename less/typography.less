@@ -6,6 +6,9 @@
 
 a {
   text-decoration: none;
+  &,&:active {
+    color:#183a4d;
+  }
 }
 p {
   margin:0;
@@ -51,4 +54,43 @@ blockquote {
   color:#006b5c;
   font-size: 23px;
   text-decoration: none;
+}
+
+.small {
+  font-size:13px;
+  color: #859098;
+}
+
+
+.phone {
+  line-height: 28px;
+
+  span {
+    &:nth-child(1) {
+      font-size: 17px;
+      margin-right: 5px;
+    }
+    &:nth-child(2) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &--green {
+
+  }
+}
+
+.email {
+  line-height: 28px;
+  font-size: 17px;
+  text-decoration: underline;
+
+  &--green {
+    color: #006b5c;    
+  }
+}
+
+.address {
+  line-height: 28px;
 }

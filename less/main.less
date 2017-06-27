@@ -19,8 +19,8 @@ html, body {
 	padding-left: 60px;
 	padding-right: 60px;
 	&--main {
-		box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
- 	  	padding-top:80px;	
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ 	  padding-top:80px;	
 	}
 }
 
@@ -105,8 +105,7 @@ html, body {
 	margin: auto;
 	text-align: center;
 	width: 430px;
-	z-index: 1000;	
-
+	
 	&--big {
 
 	}
@@ -180,11 +179,19 @@ html, body {
   margin-bottom:40px;
 }
 
+.production {
+	&--img {
+		text-align: center;
+	}
+}
+
+
 .service {
+	margin-bottom: 30px;
 	&__item {
 		width:400px;
 		display:inline-block;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		padding-left: 72px;		
 		
 		p {
@@ -198,5 +205,18 @@ html, body {
 			background:url("../img/acc.png") no-repeat scroll;
 		}
 	}
+	&__title {
+		margin-bottom: 15px;
+	}
+}
 
+/* regions */
+.regions {
+	margin-bottom: 30px;
+	
+	&__title {
+		font-size: 22px;
+  	font-weight: bold;
+  	color:#183a4d;	
+	}
 }

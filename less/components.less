@@ -35,7 +35,7 @@ table {
     right: 0;
     margin: auto;
 
-    z-index: 999;
+    z-index: 1000;
   }
   &--top {
     background-color: rgba(44, 142, 130, 0.8);
@@ -70,7 +70,7 @@ table {
     height: 100%;
 
     &--top {
-      line-height: 44px;
+      line-height: 45px;
       padding: 0 15px;
       &:hover,&:active,.nav___link--active {
         background-color: #1D9B89;
@@ -117,21 +117,11 @@ article * {
 /* контактная информация */
 .contacts {
   background:#edfaf9; 
-  border-radius: 5px;
+  padding: 20px;
   border-bottom: 3px solid #bfe2e0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  margin-left:-15px;
+  margin-right: -15px;
 }
-.contacts h2 {
-  color:#183a4d;
-  font-size:20px;
-  font-weight: bold;
-  margin:0;
-    display: inline-block;
-}
-
-
 
 .pull-left {
   float:left;
@@ -144,3 +134,74 @@ article * {
 .clearfix {
   clear:both;
 }
+
+.img {
+  &--responsive {
+    width: 100%;
+  }
+}
+
+.tabs {
+
+  &__header,&__selector {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  &__link {
+    padding: 0 15px;
+  }
+  &__header {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    
+    color: #183a4d;
+  }
+
+  &__selector {
+    padding: 0 15px;
+    list-style: none;
+  }
+
+  &__tab {
+    display: inline-block;
+    transition: background 0.5s ease;
+    margin-right: 5px;
+    
+    &--active,&:hover {
+      background-color: #42A89A;
+
+      .tabs__link {
+        color:#ffffff;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    display: block;
+  }
+}
+
+.tab {
+  &__content {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+}
+
+
+.info {
+  &__block {
+    display: inline-block;
+    border-right: 1px solid #d7f1ed;
+    padding: 0 35px;
+    vertical-align: top;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
