@@ -1,0 +1,25 @@
+// Media query hacks
+/*
+/* Large Devices, Wide Screens */
+@xl: 	~"only screen and (min-width : 1200px)";
+/* Medium Devices, Desktops */
+@lg: 	~"only screen and (min-width : 992px) and (max-width: 1199px)";
+/* Small Devices, Tablets */
+@md: 	~"only screen and (min-width : 768px) and (max-width: 991px)";
+/* Extra Small Devices, Phones */ 
+@sm: 	~"only screen and (min-width : 576px) and (max-width: 767px)";
+/* Custom, iPhone Retina */ 
+@xs: 	~"only screen and (max-width : 575px)";
+
+@mobiles:       ~"only screen and (max-width : 767px)";
+@not-desktop:  	~"only screen and (max-width : 991px)";
+
+
+.only {
+	&--mobiles {
+		display: none;
+		@media @not-desktop {
+			display: block;
+		}
+	}
+}

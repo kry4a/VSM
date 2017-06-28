@@ -1,3 +1,5 @@
+@import "./_mixins.less";
+
 html, body {
     height: 100%;
     margin: 0;
@@ -16,10 +18,10 @@ html, body {
 }
 
 .container {
-	padding-left: 60px;
-	padding-right: 60px;
+	/*padding-left: 60px;
+	padding-right: 60px; */
 	&--main {
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
  	  padding-top:80px;	
 	}
 }
@@ -177,6 +179,10 @@ html, body {
 
 .production, .services,.contacts {
   margin-bottom:40px;
+
+  @media @xs {
+  	margin-bottom: 15px;
+  }
 }
 
 .production {
@@ -192,7 +198,7 @@ html, body {
 		width:400px;
 		display:inline-block;
 		margin-bottom: 30px;
-		padding-left: 72px;		
+		padding-left: 80px;		
 		
 		p {
 			font-size: 15px;
@@ -205,8 +211,11 @@ html, body {
 			background:url("../img/acc.png") no-repeat scroll;
 		}
 	}
+	@media @xs {
+		padding: 0 15px;
+	}
 	&__title {
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 	}
 }
 

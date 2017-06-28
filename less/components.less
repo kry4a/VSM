@@ -1,3 +1,5 @@
+@import "./_mixins.less";
+
 table {
   margin:25px auto;
   border-bottom:2px solid #bfe2e0;
@@ -142,11 +144,6 @@ article * {
 }
 
 .tabs {
-
-  &__header,&__selector {
-    display: inline-block;
-    margin-bottom: 5px;
-  }
   &__link {
     padding: 0 15px;
   }
@@ -156,10 +153,11 @@ article * {
     font-weight: bold;
     
     color: #183a4d;
+
   }
 
   &__selector {
-    padding: 0 15px;
+    padding: 0 15px;    
     list-style: none;
   }
 
@@ -180,6 +178,22 @@ article * {
     width: 100%;
     display: block;
   }
+  &__header,&__selector {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    @media @mobiles {
+      display: block;
+      text-align: center;
+    }
+
+    @media @xs {
+      margin-bottom: 5px;
+    }
+    @media @sm {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .tab {
@@ -195,12 +209,30 @@ article * {
 .info {
   &__block {
     display: inline-block;
+    margin-bottom: 10px;
+
     border-right: 1px solid #d7f1ed;
     padding: 0 35px;
     vertical-align: top;
 
     &:last-child {
       border-right: none;
+    }
+
+    * {
+      white-space: nowrap;
+    }
+
+    @media @xs {
+      border:none;
+      text-align: center;
+    }
+
+    @media @sm {
+      border-right: none;
+      &:nth-child(2n+1) {
+        border-right: 1px solid #d7f1ed;
+      }
     }
   }
 }
