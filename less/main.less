@@ -18,21 +18,41 @@ html, body {
 }
 
 .container {
+	position: relative;
 	/*padding-left: 60px;
 	padding-right: 60px; */
+	
 	&--main {
 	  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
  	  padding-top:80px;	
+
+ 	  @media @xs {
+ 	  	padding-top: 15px;
+ 	  }
 	}
 }
 
 /* header and footer */
 .header {
+	position: relative;
+
 	background: url("../img/bg_logo.jpg") no-repeat scroll center -147px #379e9a;
-	background-size: cover; 
-  	color:#fff;
+	background-size: cover;
+	background-position: center top; 
+  color:#fff;
+	
 	&--big{
 		height: 350px;
+
+		@media @xs {
+			height: 200px;
+		}
+
+		@media @sm {
+			height:280px;
+		}
+
+		
 	}
 	&--small {
 		height: 165px;
@@ -71,6 +91,8 @@ html, body {
 	position: absolute;
 	right: 0;
 	top: 70px;
+  
+  white-space: nowrap;
 
 	&__text {
 		color: #fff;
@@ -83,12 +105,35 @@ html, body {
 		span {
 			display:none;
 		}
+
+		@media @xs {
+			font-size: 18px;
+		}
+
+		@media @sm {
+			font-size: 18px;
+		}
 	}
 
 	&__img {
-		margin: 0 auto;
-		width:500px;
 		display:block; 	
+		width:200px;
+		margin: 0 auto;
+		
+		@media @sm {
+			width: 350px;
+		}
+		@media @md {
+			width: 500px;
+		}
+		@media @lg {
+			width:500px;
+		}	
+
+		@media @xl {
+			width:500px;
+		}
+
 	}
 		
 	&__link {
@@ -97,17 +142,23 @@ html, body {
 			text-decoration: none;
 		}
 	}
+
+	@media @xs {
+		top: 60px;
+	}
 }
 
 .sublogo {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 330px;
+	bottom: -50px;
 	margin: auto;
 	text-align: center;
 	width: 430px;
-	
+	@media @sm {
+		width: 350px;
+	}	
 	&--big {
 
 	}
@@ -133,8 +184,19 @@ html, body {
 			
 			margin: 0 auto;
 			
-			width: 340px;			
+			width: 340px;	
+			@media @sm {
+				width: 280px;
+			}	
 		}
+
+		@media @sm {
+			font-size: 21px;
+		}
+	}
+
+	@media @xs {
+		display: none;
 	}
 }
 
@@ -176,7 +238,34 @@ html, body {
 
 
 /* sections at home */
+.contents {
+	&__title {
+		font-size: 28px;
+		@media @xs {
+			font-size: 21px;
+			text-align: center;	
+		}
+		
+	}
 
+	&__link {
+		font-weight: bold;
+		color: #006b5c;
+		font-size: 23px;
+		@media @xs {
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		@media @xs {
+			text-align: center;
+			font-size: 15px;
+		}
+	}
+
+}
 .production, .services,.contacts {
   margin-bottom:40px;
 
@@ -186,8 +275,15 @@ html, body {
 }
 
 .production {
-	&--img {
+	&__img {
 		text-align: center;
+		
+		@media @xs {
+			display: none;
+		}
+		@media @sm {
+			display: none;
+		}
 	}
 }
 
@@ -195,7 +291,6 @@ html, body {
 .service {
 	margin-bottom: 30px;
 	&__item {
-		width:400px;
 		display:inline-block;
 		margin-bottom: 30px;
 		padding-left: 80px;		
