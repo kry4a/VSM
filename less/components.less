@@ -172,7 +172,6 @@ article * {
     font-weight: bold;
     
     color: #183a4d;
-
   }
 
   &__selector {
@@ -197,6 +196,7 @@ article * {
     width: 100%;
     display: block;
   }
+
   &__header,&__selector {
     display: inline-block;
     margin-bottom: 15px;
@@ -233,7 +233,7 @@ article * {
     border-right: 1px solid #d7f1ed;
     padding: 0 35px;
     vertical-align: top;
-
+    
     &:last-child {
       border-right: none;
     }
@@ -241,12 +241,21 @@ article * {
     * {
       white-space: nowrap;
     }
-
+    
+    @media @md {
+      text-align: right;
+      &:nth-child(2n) {
+        text-align: left;
+      }
+      
+    }
     @media @xs {
       border:none;
       text-align: center;
-    }
+      border-top: 1px solid #d7f1ed;
+      padding-top: 15px;
 
+    }
     @media @sm {
       border-right: none;
       &:nth-child(2n+1) {
@@ -256,3 +265,61 @@ article * {
   }
 }
 
+
+
+.sprite {
+  position: relative;
+  &:before {
+    content: "";
+    float: left;
+    height: 20px;
+    width: 20px;
+    @media @md {
+      display: none;
+    }
+    @media @mobiles {
+      display: none;
+    }
+  }
+
+  &--phone {
+    &:before {
+      background: url("../img/sprites.png") repeat scroll 115px 137px rgba(0, 0, 0, 0);  
+      margin-top: 10px;
+      margin-left: -25px;
+    }
+  }
+
+  &--email {
+    &:before {
+      background: url("../img/sprites.png") repeat scroll 135px 156px rgba(0, 0, 0, 0);
+      margin-top: 5px;
+      margin-left: -25px;
+    }
+  }
+
+  &--fax {
+    &:before {
+      background: url("../img/sprites.png") repeat scroll 66px 140px rgba(0, 0, 0, 0);
+      margin-top: 5px;
+      margin-left: -27px;
+    }
+  }
+  
+  &--address {
+    &:before {
+      width: 25px;
+      background: url("../img/sprites.png") repeat scroll 152px 2px rgba(0, 0, 0, 0);
+      margin-left: -30px;
+      margin-top: 4px;
+    }
+  }
+  
+  &--directions {
+    &:before {
+      background: url("../img/sprites.png") repeat scroll 155px 150px rgba(0, 0, 0, 0);
+      margin-left: -25px;
+      margin-top: 8px;
+    }
+  }
+}
