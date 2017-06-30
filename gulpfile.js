@@ -55,7 +55,7 @@ gulp.task('watch', ['style', 'js'], function () {
 	});
 	gulp.watch('./js/**/*.js', ['js']);
 	gulp.watch('./less/**/*.less', ['style']);
-	gulp.watch('./docs/*').on('change', browserSync.reload);
+	gulp.watch('./docs/**/*').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['style', 'js']);
