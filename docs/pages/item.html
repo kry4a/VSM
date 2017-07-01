@@ -2,339 +2,232 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Аппарат высокого давления - Серийная продукция - Промышленная компания ВСМ</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/flexslider.css">
-	<link rel="stylesheet" href="../css/normalize.css">
-
-	<!--[if lt IE 9]>
-		<script src="../js/html5shiv.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Главная - Промышленная компания ВСМ</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" href="/libs.css">
+	<link rel="stylesheet" href="/bundle.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+	<![endif]-->
+	
 </head>
 <body>
-	<div id="popupbg" class="popup-background"></div>
-	<div id="popup" class="popup">
-	<a class="close-form" href="javascript:PopUpHide()">x</a>
-		<h1>Форма заказа</h1>
-		<div class="cart">
-			<p>Выбранные товары:</p>
-			<div class="selected">
-				<img alt="" src="../media/item-photo.jpg" class="product-image">
-				<a title="ВСМ А110с" class="product-title" href="">Аппарат высокого давления воды ВСМ А110с</a>
-				<div class="product-desc">
-					<p class="pressure">200 бар</p>
-					<p class="flow">15 л/мин</p>
-					<p class="power">5.5 кВт</p>
+	<header class="header header--small">
+		<div class="container header__container">
+			<div class="row row--center">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="logo logo--small">
+						<a class = "logo__link" href="/" title="Промышленная компания ВСМ">
+							<img class="logo__img logo__img--small img--responsive" src="../img/vsm_logo.png"/>
+						</a>	
+					</div>
 				</div>
-			</div>
-			<div class="clearfix"></div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+					<div class="info row">
+			    	<div class="info__block info__block--white col-xs-12 col-md-6">
+			    		<p class="phone sprite sprite--phone-white"><span>(812)</span><span>327-30-62</span></p>
+			    		<p class="small small--white">многоканальный</p>
+			    	</div>
+			    	<div class="info__block info__block--white col-xs-12 col-md-6">
+			    		<p class="sprite sprite--address-white">г. Санкт-Петербург,</p>
+					    <p>ул. Некрасова д.60 пом. 44Н</p>
+			    	</div>
+			    </div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-4">
+					<div id="cart" class="cart">Корзина</div>
+				</div>
+			</div>	
 		</div>
-		<form class="order-form" action="">
-			<div class="form-fields">
-				<div class="field field-100">
-					<label for="fio">ФИО покупателя</label>
-					<input id="fio" type="text"  value="Кручинкин Никита Александрович" />
-				</div>
-				<div class="field field-30">
-					<label for="post">Почт. индекс</label>
-					<input id="post" type="text"  value="198206"/>
-				</div>
-				<div class="field field-70">
-					<label for="address">Адрес</label>
-					<input id="address" type="text"  value="г.Санкт-Петербург"/>
-				</div>
-				<div class="field field-50">
-					<label for="phone">Телефон для связи</label>
-					<input id="phone" type="text"  value="+79213340926" class="wrong"/>
-				</div>
-				<div class="field field-50">
-					<label for="email">E-mail</label>
-					<input id="email" type="text" size="25" value="nikita.kruchinkin@gmail.com"/>
-				</div>
-			</div>
-			
-			<div class="form-footer">
-				<div class="form-messages">
-					<p class="warning">Телефон должен содержать только цифры</p>
-					<p class="okay">Закза успешно отправлен! Ждите звонка!</p>
-
-				</div>
-				<div class="placeorder">
-					<a href="#" class="button order" id="order">Отправить заказ</a>
+		<nav class="navbar navbar--default navbar--top">
+			<div class="container">
+				<button class="navbar__toggler navbar-toggler--right" type="button" data-toggle="collapse" data-target="#topmenu" aria-controls="topmenu" aria-expanded="false" aria-label="Открыть меню">
+					<span class="navbar-toggler__icon"></span>
+				</button>
+				<a class="navbar__brand" href="#">ПК ВСМ</a>
+				<div class="collapse navbar__collapse" id="topmenu">
+					<ul class="navbar__nav nav">
+						<li class="nav__item">
+							<a class="nav__link nav__link--top nav__link--active" href="#">О компании</a>
+						</li>
+						<li class="nav__item dropdown">
+			     		<a class="nav__link nav__link--top dropdown-toggle" href="./pages/category.html">Продукция</a>
+			     		<ul class="nav nav__dropdown">
+			     			<li class="nav__item"><a class="nav__link" href="./pages/category.html">Серийная</a></li>
+			     			<li class="nav__item"><a class="nav__link" href="./pages/category.html">Заказная</a></li>
+			     			<li class="nav__item"><a class="nav__link" href="./pages/category.html">По ТЗ</a></li>
+			     			<li class="nav__item"><a class="nav__link" href="./pages/category.html">Аксессуары</a></li>
+			     		</ul>
+			    	</li>
+						<li class="nav__item"><a class="nav__link nav__link--top" href="./pages/texts.html">Применение</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--top" href="#">Сервис</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--top" href="#">В наличии </a></li>
+						<li class="nav__item"><a class="nav__link nav__link--top" href="./pages/contacts.html">Контакты</a></li>
+						<li class="nav__item nav__item--hermit"><a class="nav__link nav__link--top" href="#">Каталог продукции</a></li>
+					</ul>
 				</div>
 			</div>
-		</form>
-	</div>
-	<div class="page-wrapper"> <!-- обертка для того, чтобы футер был прикреплен к низу экрана-->
+		</nav>
 
-		<header class="small">
-			<div id="topmenu" class="navbar navbar-default">
-				<div class="inner">
-					<nav class="topmenu">
-						<ul class="menu">
-							<li class="active"><a href="../index.php">О компании</a></li>
-							<li class="has-submenu">
-					     		<a href="./category.php">Продукция <b class="caret"></b></a>
-								<ul>
-					     			<li><a href="./category.php">Серийная</a></li>
-					     			<li><a href="./category.php">Заказная</a></li>
-					     			<li><a href="./category.php">По ТЗ</a></li>
-					     			<li><a href="./category.php">Аксессуары</a></li>
-					     		</ul>
-					    	</li>
-							<li><a href="#">Применение</a></li>
-							<li><a href="#">Сервис</a></li>
-							<li><a href="#">Контакты</a></li>
-							<li><a href="#">В наличии </a></li>
-							<li class="hermit"><a href="#"><span class="catalog">Каталог продукции</span></a></li>
-							<div class="clearfix"></div>
+	</header>
+	<main>
+		<div class="container container--content">
+			<div class="row">
+				<aside class="aside col-xs-12 col-md-4 col-lg-3">
+					<nav>
+						<div class="nav__title">Линейка продукции</div>
+						<ul class="nav nav--aside">
+							<li class="nav__item nav__item--aside">
+								<a href="#" class="nav__link nav__link--aside">A2 <span class="small">7-15кВТ</span></a>
+							</li>
+							<li class="nav__item nav__item--aside">
+								<a href="#" class="nav__link nav__link--aside">A3 <span class="small">7-15кВТ</span></a>
+							</li>
+							<li class="nav__item nav__item--aside">
+								<a href="#" class="nav__link nav__link--aside">A4 <span class="small">16-25кВТ</span></a>
+							</li>
+							<li class="nav__item nav__item--aside">
+								<a href="#" class="nav__link nav__link--aside">A5 <span class="small">30-45кВТ</span></a>
+							</li>
+							<li class="nav__item nav__item--aside">
+								<a href="#" class="nav__link nav__link--aside">A6 <span class="small">55-132кВТ</span></a>
+							</li>
 						</ul>
 					</nav>
-				</div>
-			</div>
-			<div class="inner">
-				<div class="logo">
-					<a href="#" title="Промышленная компания ВСМ">
-						<h1 role="logo" class="text-logo extrabold">Промышленная компания <span>ВСМ</span></h1>
-						<img class="img-logo" src="../img/vsm_logo.png"/>
-					</a>	
-				</div>
-				<div class="sublogo">
-					<div class="infoblock">
-						<p class="tele white"><span class="citycode">(812)</span><span class="telephone"> 327-30-62</span></p>
-		    			<p class="small">многоканальный</p>
-			    	</div>
-					<div class="infoblock">
-		    			<p class="address white">г. Санкт-Петербург,</p>
-		    			<p>ул. Некрасова д.60 пом. 44Н</p>
-		    		</div>
-					<a href="javascript:PopUpShow()" class="order" id="order" style="display:none">Сделать заказ</a>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</header>
-		<div class="container-main">
-			<div class="inner">
-				<div class="left" style="width:220px; margin-right:20px;">
-					<div class="menublock">
-						<h2 class="menu-title">Линейки продукции</h2>
-						<ul class="left-menu">
-						    <li id="A2" class="has-submenu">
-						      <a href="#A2">A2 <span class="desc">7-15кВТ</span></a>
-						      <ul class="submenu">
-						        <li><a href="#A2">ВСМ А110с</a></li>
-						        <li class="active"><a href="#A2">ВСМ А215</a></li>
-						        <li><a href="#A2">ВСМ А215п</a></li>
-						      </ul>
-						    </li>
-						    <li id="A3" class="has-submenu">
-						      <a href="#A3">A3 <span class="desc">7-15кВТ</span></a>
-						      <ul class="submenu">
-						        <li><a href="#A3">ВСМ А110с</a></li>
-						        <li><a href="#A3">ВСМ А215</a></li>
-						        <li><a href="#A3">ВСМ А215п</a></li>
-						      </ul>
-						    </li>
-						    <li id="A4" class="has-submenu">
-						      <a href="#A4">A4 <span class="desc">16-25кВТ</span></a>
-						      <ul class="submenu">
-						        <li><a href="#A4">ВСМ А110с</a></li>
-						        <li><a href="#A4">ВСМ А215</a></li>
-						        <li><a href="#A4">ВСМ А215п</a></li>
-						      </ul>
-						    </li>
-						    <li id="A5" class="has-submenu">
-						      <a href="#A5">A5 <span class="desc">30-45кВТ</span></a>
-						      <ul class="submenu">
-						        <li><a href="#A5">ВСМ А110с</a></li>
-						        <li><a href="#A5">ВСМ А215</a></li>
-						        <li><a href="#A5">ВСМ А215п</a></li>
-						      </ul>
-						    </li>
-						    <li id="A6" class="has-submenu">
-						      <a href="#A6">A6 <span class="desc">55-132кВТ</span></a>
-						      <ul class="submenu">
-						        <li><a href="#A6">ВСМ А110с</a></li>
-						        <li><a href="#A2">ВСМ А215</a></li>
-						        <li><a href="#A6">ВСМ А215п</a></li>
-						      </ul>
-						    </li>
-						</ul>
-					</div>
-				</div>
-				<div class="main" style="width:740px;">
-					<div class="breadcrumbs">
-						<ul>
- 							<li><a href="../index.php">Главная</a> / </li>
-							<li><a href="./category.php">Продукция</a> / </li>
-							<li><a href="#">A2 7-15 кВт</a> / </li>
- 						</ul>
-					</div>
-					<section class="content" style=" padding-right: 0px">
-						<h1 class="page-title">Аппарат высокого давления воды ВСМ А215</h1>
-						<div class="content-area">
-							<p class="small-desc">Удобен для каналопромывочных работ. Гарантия 1 год.</p>
-							<section class="product-page">
-								<div class="item-images">
-										<spam class="in-stock">товар в наличии</spam>
-										<div class="flexslider" style="margin:0;">
-					  						<ul class="slides">
-					    						<li data-thumb="http://placehold.it/80x60">
-					    							<img src="http://placehold.it/360x255" />
-					    						</li>
-					    						<li data-thumb="http://placehold.it/80x60">
-					      							<img src="http://placehold.it/360x255" />
-					    						</li>
-					    						<li data-thumb="http://placehold.it/80x60">
-					      							<img src="http://placehold.it/360x255" />
-					    						</li>
-					    						<li data-thumb="http://placehold.it/80x60">
-					      							<img src="http://placehold.it/360x255" />
-					    						</li>
-					  						</ul>
-										</div>
-								</div>
-								<div class="item-desc">
-									<ul class="descriptions ul-dotted">
-										<h3>Технические характеристики</h3>
-										<li><span class="name bold">Макс. рабочее давление</span> <span class="value">110 бар</span> </li>
-										<li><span class="name bold">Макс. расход воды</span> <span class="value">12 л/мин</span> </li>
-										<li><span class="name bold">Тип привода</span> <span class="value">электрический</span> </li>
-										<li><span class="name bold">Мощность</span> <span class="value">5 кВт</span> </li>
-										<li><span class="name bold">Обороты двигателя</span> <span class="value">4500 об/мин</span> </li>
-										<li><span class="name bold">Обороты помпы</span> <span class="value">4500 об/мин</span> </li>
-										<li><span class="name bold">Макс. температура воды</span> <span class="value">50 C</span> </li>
-										<li><span class="name bold">Размеры</span> <span class="value">400x300x350мм</span></li>
-										<li><span class="name bold">Вес</span> <span class="value">35кг</span></li>
-										
-									</ul>
-									<div class="item-order">
-										<form if="order" method="post" id="myFavoriteForm">
-											<a type="submit" class="button button-order" href="javascript:PopUpShow()"><span class="cart"></span>Сделать заказ</a>
-											<input type="text" style="display:none" value="А215"/>
-										</form>
-									</div>
-								</div>
-								<div class="item-info">
-									<div class="item-infoblock">
-										<h3>Базовая комплектация</h3>
-										<ul class="ul-two-columns">
-											<li><span class="name">Шланг ВД 10м.</span></li>
-											<li><span class="name">Пистолет ВД</span></li>
-											<li><span class="name">Удлиннитель дюзы 450мм</span></li>
-											<li><span class="name">Дюза секторная</span></li>
-										</ul>
-									</div>
-									<div class="item-infoblock">
-										<h3>Защита</h3>
-										<ul class="ul-dotted defense">
-											<li><span class="name">Защита от сухого запуска</span><span class="value value-yes"></span></li>
-											<li><span class="name">Защита от перегрева</span><span class="value value-no"></span></li>
-											<li><span class="name">Защита от превышения макс. давления</span><span class="value value-no"></span></li>
-										</ul>
-									</div>
-								</div>
-								<div class="item-acc">
-									<p class="accs-title"> <a href="#">Аксессуары</a> для данной модели</p>
-									<div class="row">
-										<div class="acc">
-											<a href="#">
-												<div class="acc-img">
-													<img src="../media/products/acc_1.jpg" alt="">	
-												</div>
-												<p class="acc-title">Инжектор моющих средств с опенивателем</p>
-											</a>
-											
-										</div>
-										<div class="acc">
-											<a href="#">
-												<div class="acc-img">
-													<img src="../media/products/acc_2.jpg" alt="">
-												</div>
-												<p class="acc-title">Держатель дюзы</p>
-											</a>
-										</div>
-										<div class="acc">
-											<a href="#">
-												<div class="acc-img">
-													<img src="../media/products/acc_3.jpg" alt="">
-												</div>
-												<p class="acc-title">Дюза каналопромывочная</p>
-											</a>
-										</div>
-										<div class="acc">
-											<a href="#">
-												<div class="acc-img">
-													<img src="../media/products/acc_4.jpg" alt="">
-												</div>
-												<p class="acc-title">Дюза секторная</p>
-											</a>
-										</div>
-										
-									</div>
-									<div class="clearfix"></div>
-
-								</div>
-							</section>
-						</div>
+				</aside>
+				<div class="col-xs-12 col-md-8 col-lg-9">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../index.php">Главная</a> / </li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Продукция</a> / </li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">A2 7-15 кВт</a> / </li>
+					</ul>
+					<section class="page">
+						<h1 class="page__title">Аппарат высокого давления воды ВСМ А215</h1>
+						<p class="page__preview">Удобен для каналопромывочных работ. Гарантия 1 год.</p>
 					</section>
+					<section class="product row">
+						<div class="product__images col-xs-12 col-lg-6">
+							<div class="in-stock">в наличии</div>
+							<div class="flexslider" style="margin:0;">
+								<ul class="slides">
+	    						<li data-thumb="http://placehold.it/100x75">
+	    							<img src="http://placehold.it/400x280" />
+	    						</li>
+	    						<li data-thumb="http://placehold.it/100x75">
+	      							<img src="http://placehold.it/400x280" />
+	    						</li>
+	    						<li data-thumb="http://placehold.it/100x75">
+	      							<img src="http://placehold.it/400x280" />
+	    						</li>
+	    						<li data-thumb="http://placehold.it/100x75">
+	      							<img src="http://placehold.it/400x280" />
+	    						</li>
+	  						</ul>			  						
+							</div>
+						</div>
+						<div class="col-xs-12 col-lg-6">
+							<div class="product__specs product-specs">
+								<h3 class="product-specs__title">Технические характеристики</h3>
+								<ul class="product-specs__list speclist">
+									<li class="speclist__item"><span>Макс. рабочее давление</span><span>110 бар</span> </li>
+									<li class="speclist__item"><span>Макс. расход воды</span> <span>12 л/мин</span> </li>
+									<li class="speclist__item"><span>Тип привода</span> <span>электрический</span> </li>
+									<li class="speclist__item"><span>Мощность</span> <span>5 кВт</span> </li>
+									<li class="speclist__item"><span>Обороты двигателя</span> <span>4500 об/мин</span> </li>
+									<li class="speclist__item"><span>Обороты помпы</span> <span>4500 об/мин</span> </li>
+									<li class="speclist__item"><span>Макс. температура воды</span> <span>50 C</span> </li>
+									<li class="speclist__item"><span>Размеры</span> <span>400x300x350мм</span></li>
+									<li class="speclist__item"><span>Вес</span> <span>35кг</span></li>
+									
+								</ul>
+							</div>
+							<div class="product__to-cart">
+									<button class="btn product__button" onclick="cart.add('58','1');">В корзину</button>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="product__infos row">
+								<div class="product__info col-xs-12 col-lg-6">
+									<h3>Базовая комплектация</h3>
+									<ul class="ul-two-columns">
+										<li><span>Шланг ВД 10м.</span></li>
+										<li><span>Пистолет ВД</span></li>
+										<li><span>Удлиннитель дюзы 450мм</span></li>
+										<li><span>Дюза секторная</span></li>
+									</ul>
+								</div>
+								<div class="product__info col-xs-12 col-lg-6">
+									<h3>Защита</h3>
+									<ul class="speclist">
+											<li class="speclist__item"><span>Защита от сухого запуска</span><span class="sprite sprite-yes"></span></li>
+											<li class="speclist__item"><span>Защита от перегрева</span><span class="sprite sprite-no"></span></li>
+											<li class="speclist__item"><span >Защита от превышения макс. давления</span><span class="sprite sprite-no"></span></li>
+										</ul>
+								</div>
+							</div>
+							<div class="product__desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo minima, sunt nisi id magni dignissimos rem. A officiis accusamus cum facere reiciendis, quam iste, laborum nisi voluptatibus cupiditate eligendi, quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis optio ea aspernatur sunt, natus explicabo atque rerum deserunt sit dolorum nihil commodi dicta, laudantium maxime quibusdam animi exercitationem nobis temporibus.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit temporibus, sequi mollitia dolorem voluptatibus assumenda. Commodi odit cupiditate eos, nobis quisquam obcaecati vero, rerum voluptatibus, ut quidem quod. Eaque, rem!</p>		
+							</div>
+							<div class="product__related related">
+								<h3 class="related__title"><a class="related__link" href="#">Аксессуары</a> для данной модели</h3>
+								<div class="related__products row">
+									<div class="related__product col-sm-6 col-lg-3">
+										<div class="related__img"><img src="../media/products/acc_1.jpg" alt="" class="img--responsive"></div>
+										<div class="related__desc">Инжектор моющих средств с опенивателем</div>
+									</div>
+									<div class="related__product col-sm-6 col-lg-3">
+										<div class="related__img"><img src="../media/products/acc_2.jpg" alt="" class="img--responsive"></div>
+										<div class="related__desc">Инжектор моющих средств с опенивателем</div>
+									</div>
+									<div class="related__product col-sm-6 col-lg-3">
+										<div class="related__img"><img src="../media/products/acc_3.jpg" alt="" class="img--responsive"></div>
+										<div class="related__desc">Инжектор моющих средств с опенивателем</div>
+									</div>
+									<div class="related__product col-sm-6 col-lg-3">
+										<div class="related__img"><img src="../media/products/acc_4.jpg" alt="" class="img--responsive"></div>
+										<div class="related__desc">Инжектор моющих средств с опенивателем</div>
+									</div>
+								</div>
+							</div>
+						</section>
 				</div>
-				
 			</div>
 		</div>
-		<div class="page-buffer"></div>
-	</div>
-	<footer>
-		<div class="inner">
-			<div class="footer-left">
-				<div class="footer-inner">
-					<p class="footer-title">Промышленная компания «ВСМ»</p>
-					<p><a href="#">всм.рф</a> - все права защищены © 2014</p>
+	</main>
+	
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__content">
+				<div class="pull-left">
+					
 				</div>
+				<div class="pull-right">
+					
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="footer-main">
-				<div class="footer-inner">
+			<div class="footer__content">
+				<div class="pull-left">
 					<p> 191014, г. Санкт-Петербург ,ул. Некрасова д. 60 пом. 44Н  </p>
 					<p> (812) 327-30-62, (812) 719-70-51 info@pkvsm.ru </p>
 				</div>
-			</div>
-			<div class="footer-right">
-				<div class="footer-inner">
-					<img src="http://placehold.it/190x70"/>
+				<div class="pull-right">
+					<p class="footer-title">Промышленная компания «ВСМ»</p>
+					<p><a href="#">всм.рф</a> - все права защищены © 2017</p>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="/libs.js"></script>
+	<script type="text/javascript" src="/bundle.js"></script>
 	
-	<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
- 	
 
- 	<script type="text/javascript">
- 		$(window).load(function() {
-	  		$('.flexslider').flexslider({
-	    		animation: "slide",
-	    		controlNav: "thumbnails",
-	    		directionNav: false
-	  		});
-		}); 
- 	</script>
-
- 	<script type="text/javascript">
-    	
-    	//Функция отображения PopUp
-    	function PopUpShow(){
-	        $("#popupbg").show();
-	        $("#popup").show();
-    	}
-    	//Функция скрытия PopUp
-    	function PopUpHide(){
-	        $("#popupbg").hide();
-	        $("#popup").hide();
-    	}
-    	
-	</script>
 </body>
 </html>
