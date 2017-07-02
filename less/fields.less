@@ -1,0 +1,34 @@
+.input-group {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+
+  &__label {
+    padding: 0;
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    padding: 0 15px;
+    line-height: 30px;
+  }
+
+  &__text {
+    width: 100%; 
+    border: none;
+    resize: none;
+  }
+
+  &__placeholder {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    transition: all .3s ease;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+}

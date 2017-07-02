@@ -1,8 +1,14 @@
+@import "./_mixins.less";
 * {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color:#183a4d;
+
+  @media @mobiles {
+    font-size: 14px;
+  }
 }
+
 
 a {
   text-decoration: none;
@@ -12,8 +18,8 @@ a {
 }
 p {
   margin:0;
-  margin-bottom: 5px;
-  text-indent: 15px;
+  margin-bottom: 15px;
+  
 }
 
 ul{
@@ -39,9 +45,8 @@ h3 {
 blockquote {
   background: #edfaf9;
   padding:20px 35px;
-  border-radius: 10px;
   border-bottom:2px solid #bfe2e0;
-  margin-right:0;
+  margin-left:15%;
 }
 
 .semibold {
@@ -62,7 +67,10 @@ blockquote {
 
 .small {
   font-size:13px;
+  line-height: 10px;
   color: #859098;
+
+  margin-bottom: 0;
 
   &--white {
     color:#ffffff;
@@ -71,8 +79,6 @@ blockquote {
 
 
 .phone {
-  line-height: 28px;
-
   span {
     &:nth-child(1) {
       font-size: 17px;
@@ -115,5 +121,24 @@ blockquote {
 
   span {
     color:#183A4D;
+  }
+}
+
+.article {
+  &__preview {
+
+  }
+  &__images {
+    margin-bottom: 15px;
+  }
+  &__text {
+
+  }
+}
+
+.img {
+  &--inline {
+    float: left;
+    margin-right: 15px;
   }
 }

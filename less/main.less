@@ -339,6 +339,11 @@ html, body {
  	  color:#183a4d;
   	margin:0;
   	margin-bottom: 10px;
+    text-indent: 0;
+
+    @media @mobiles {
+        font-size: 18px;
+    }
   }
 
   &__preview {
@@ -369,7 +374,7 @@ html, body {
 	&__inner {
 		position: relative;
 		background-color: #EEFAFA;	
-		border-bottom: 5px solid #C4E4E1;
+		border-bottom: 3px solid #C4E4E1;
 		padding: 5px;
 
 		&:after {
@@ -576,7 +581,7 @@ html, body {
       float: left;
       width: 0;
       white-space: nowrap;
-      content:". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+      content:". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
     }
 
     span {
@@ -628,5 +633,20 @@ html, body {
     background-color: #ffffff;
     padding:0 30px;
     border:1px solid #bfe2e0;
+
+    @media @xs {
+      vertical-align: top;
+      display: inline-block;
+      width: 40%;
+      padding: 0;
+    }
+  }
+  &__desc {
+    @media @xs {
+      vertical-align: top;
+      display: inline-block;
+      width: 58%;
+      padding-left: 5px;
+    }
   }
 }

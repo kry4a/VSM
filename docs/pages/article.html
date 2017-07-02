@@ -2,177 +2,184 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Описание продукции - Промышленная компания ВСМ</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Главная - Промышленная компания ВСМ</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="/libs.css">
+	<link rel="stylesheet" href="/bundle.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="./js/html5shiv.js"></script>
 	<![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
+	
 </head>
 <body>
-	<div class="page-wrapper"> <!-- обертка для того, чтобы футер был прикреплен к низу экрана-->
-		<header class="small">
-			<div id="topmenu" class="navbar navbar-default">
-				<div class="inner">
-					<nav class="topmenu">
-						<ul class="menu">
-							<li class="active"><a href="../index.php">О компании</a></li>
-							<li class="has-submenu">
-					     		<a href="#">Продукция <b class="caret"></b></a>
-									<ul>
-					     			<li><a href="./category.php">Серийная</a></li>
-					     			<li><a href="./category.php">Заказная</a></li>
-					     			<li><a href="./category.php">По ТЗ</a></li>
-					     			<li><a href="./category.php">Аксессуары</a></li>
-					     		</ul>
-					    	</li>
-							<li><a href="./texts.php">Применение</a></li>
-							<li><a href="#">Сервис</a></li>
-							<li><a href="./contacts.php">Контакты</a></li>
-							<li><a href="#">В наличии </a></li>
-							<li class="hermit"><a href="#"><span class="catalog">Каталог продукции</span></a></li>
-							<div class="clearfix"></div>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="inner">
-				<div class="logo">
-					<a href="#" title="Промышленная компания ВСМ">
-						<h1 role="logo" class="text-logo extrabold">Промышленная компания <span>ВСМ</span></h1>
-						<img class="img-logo" src="../img/vsm_logo.png"/>
-					</a>	
-				</div>
-				<div class="sublogo">
-					<div class="infoblock">
-						<p class="tele white"><span class="citycode">(812)</span><span class="telephone"> 327-30-62</span></p>
-		    			<p class="small">многоканальный</p>
-			    	</div>
-					<div class="infoblock">
-		    			<p class="address white">г. Санкт-Петербург,</p>
-		    			<p>ул. Некрасова д.60 пом. 44Н</p>
-		    		</div>
-						<a href="#" class="order">Сделать заказ</a>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</header>
-		<div class="container-main">
-			<div class="inner">
-				<div class="main" style="width:740px;">
-					<div class="breadcrumbs">
-						<ul>
- 							<li><a href="../index.php">Главная</a> / </li>
-							<li><a href="./category.php">Продукция</a> / </li>
-							<li><a href="#">Описание</a> / </li>
- 						</ul>
-					</div>
-					<section class="content" style=" padding-right: 0px">
-						<h1 class="page-title">Описание нашей продукции</h1>
-						<div class="content-area">
-							<article>
-								<div class="small-desc">
-									<p>Мы производим водоструйные машины, постоянно стремимся к повышению качества нашей продукции, и настойчиво работаем над улучшением ее технических характеристик и потребительских свойств.</p>
-								</div>
-								<div class="arcicle-images">
-									<img src="../media/carwash1.jpg" alt="" class="article-image"/>
-									<img src="../media/carwash2.jpg" alt="" class="article-image"/>
-									<img src="../media/carwash3.jpg" alt="" class="article-image"/>
-									
-								</div>
-								<div class="text">
-									<p>Наши заказчики — это предприятия добывающего и перерабатывающего комплекса: предприятия химической, металлургической и металлообрабатывающей промышленности, машиностроительные, нефтедобывающие и нефтеперерабатывающие предприятия, а также небольшие автомойки и станции автосервиса, строительные фирмы и пищевые комбинаты.</p>
-									<blockquote>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</blockquote>
-									<h2>Супер линейка продукции</h2>
-									<p>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</p>
-									<ul class="ul-two-columns">
-										<li><span class="name">Элемент списка 1</span></li>
-										<li><span class="name">Элемент списка 2</span></li>
-										<li><span class="name">Элемент списка 3</span></li>
-										<li><span class="name">Элемент списка 4</span></li>
-										<li><span class="name">Элемент списка 5</span></li>
+  <header class="header header--small">
+    <div class="container header__container">
+      <div class="row row--center">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="logo logo--small">
+            <a class = "logo__link" href="/" title="Промышленная компания ВСМ">
+              <img class="logo__img logo__img--small img--responsive" src="../img/vsm_logo.png"/>
+            </a>  
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="info row">
+            <div class="info__block info__block--white col-xs-12 col-lg-6">
+              <p class="phone sprite sprite--phone-white"><span>(812)</span><span>327-30-62</span></p>
+              <p class="small small--white">многоканальный</p>
+            </div>
+            <div class="info__block info__block--white col-xs-12 col-lg-6">
+              <p class="sprite sprite--address-white">ул. Некрасова д.60 пом. 44Н</p>
+              <p class="small small--white">г. Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+          <div id="cart" class="cart">Корзина</div>
+        </div>
+      </div>  
+    </div>
+    <nav class="navbar navbar--default navbar--top">
+      <div class="container">
+        <button class="navbar__toggler navbar-toggler--right" type="button" data-toggle="collapse" data-target="#topmenu" aria-controls="topmenu" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler__icon"></span>
+        </button>
+        <a class="navbar__brand" href="#">ПК ВСМ</a>
+        <div class="collapse navbar__collapse" id="topmenu">
+          <ul class="navbar__nav nav">
+            <li class="nav__item">
+              <a class="nav__link nav__link--top nav__link--active" href="#">О компании</a>
+            </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link nav__link--top dropdown-toggle" href="./pages/category.html">Продукция</a>
+              <ul class="nav nav__dropdown">
+                <li class="nav__item"><a class="nav__link" href="./pages/category.html">Серийная</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/category.html">Заказная</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/category.html">По ТЗ</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/category.html">Аксессуары</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link nav__link--top" href="./pages/texts.html">Применение</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--top" href="#">Сервис</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--top" href="#">В наличии </a></li>
+            <li class="nav__item"><a class="nav__link nav__link--top" href="./pages/contacts.html">Контакты</a></li>
+            <li class="nav__item nav__item--hermit"><a class="nav__link nav__link--top" href="#">Каталог продукции</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-									</ul>
-									<h3>Подробнее про серию</h3>
-									<p>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</p>
-									
-									<p><img src="http://placehold.it/220x160"/>Наши заказчики — это предприятия добывающего и перерабатывающего комплекса: предприятия химической, металлургической и металлообрабатывающей промышленности, машиностроительные, нефтедобывающие и нефтеперерабатывающие предприятия, а также небольшие автомойки и станции автосервиса, строительные фирмы и пищевые комбинаты.</p>
-									<table bordercolor="#bfe2e0">
-										<tbody>
-											<tr>
-												<th>Заголовок таблицы 1</th>
-												<th>Заголовок таблицы 2</th>
-												<th>Заголовок таблицы 3</th>
-											</tr>
-											<tr>
-												<td>Обычная строка в таблице</td>
-												<td>Обычная строка в таблице</td>
-												<td>Обычная строка в таблице</td>
-											</tr>
-											<tr>
-												<td>Длинная строка в таблице, которая занимает несколько строчек</td>
-												<td>Длинная строка в таблице, которая занимает несколько строчек</td>
-												<td>Длинная строка в таблице, которая занимает несколько строчек</td>
-											</tr>
-											<tr>
-												<td>А это строка, которая занимает две строчки</td>
-												<td>А это строка, которая занимает две строчки</td>
-												<td>А это строка, которая занимает две строчки</td>
-											</tr>
-										</tbody>
-									</table>
-									<p>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</p>
-									<div class="big-image">
-										<img src="../media/carwash_big.jpg" alt="">
-										<p class="img-desc">Подпись к фотографии, подпись к фотографии </p>
-									</div>
-								</div>
-							</article>
+  </header>
+	<main>
+		<div class="container container--content">
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="../index.php">Главная</a> / </li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Статьи</a> / </li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Статья</a> / </li>
+					</ul>
+					<h1 class="page__title">Описание нашей продукции</h1>
+					<article class="article">
+						<p class="article__preview">Мы производим водоструйные машины, постоянно стремимся к повышению качества нашей продукции, и настойчиво работаем над улучшением ее технических характеристик и потребительских свойств.</p>
+						
+						<div class="article__images row">
+							<div class="article__image col-sm-4">
+								<img src="../media/carwash1.jpg" alt="" class="img--responsive">	
+							</div>
+							<div class="article__image col-sm-4">
+								<img src="../media/carwash2.jpg" alt="" class="img--responsive">
+							</div>
+							<div class="article__image col-sm-4">
+								<img src="../media/carwash3.jpg" alt="" class="img--responsive">
+							</div>
 						</div>
-					</section>
-					
+						<div class="article__text">
+							<p>Наши заказчики — это предприятия добывающего и перерабатывающего комплекса: предприятия химической, металлургической и металлообрабатывающей промышленности, машиностроительные, нефтедобывающие и нефтеперерабатывающие предприятия, а также небольшие автомойки и станции автосервиса, строительные фирмы и пищевые комбинаты.</p>
+							<blockquote>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</blockquote>
+							<h2>Супер линейка продукции</h2>
+							<p>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</p>
+							<ul class="ul-two-columns">
+								<li><span>Элемент списка 1</span></li>
+								<li><span>Элемент списка 2</span></li>
+								<li><span>Элемент списка 3</span></li>
+								<li><span>Элемент списка 4</span></li>
+								<li><span>Элемент списка 5</span></li>
+							</ul>
+							<h3>Подробнее про серию</h3>
+							<p>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</p>
+							
+							<p>Наши заказчики — это предприятия добывающего и перерабатывающего комплекса: предприятия химической, металлургической и металлообрабатывающей промышленности, машиностроительные, нефтедобывающие и нефтеперерабатывающие предприятия, а также небольшие автомойки и станции автосервиса, строительные фирмы и пищевые комбинаты.</p>
+							<table class="table table-responsive table-bordered">
+								<thead>
+									<tr>
+										<th class="table__th">Заголовок таблицы 1</th>
+										<th class="table__th">Заголовок таблицы 2</th>
+										<th class="table__th">Заголовок таблицы 3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="table__cell">Обычная строка в таблице</td>
+										<td class="table__cell">Обычная строка в таблице</td>
+										<td class="table__cell">Обычная строка в таблице</td>
+									</tr>
+									<tr>
+										<td class="table__cell">Длинная строка в таблице, которая занимает несколько строчек</td>
+										<td class="table__cell">Длинная строка в таблице, которая занимает несколько строчек</td>
+										<td class="table__cell">Длинная строка в таблице, которая занимает несколько строчек</td>
+									</tr>
+									<tr>
+										<td class="table__cell">А это строка, которая занимает две строчки</td>
+										<td class="table__cell">А это строка, которая занимает две строчки</td>
+										<td class="table__cell">А это строка, которая занимает две строчки</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>Установки этих серий, нисколько не уступая ни по надежности, ни по техническим характеристикам аналогичным образцам техники зарубежных производителей, а иногда и превосходя их, успели отлично зарекомендовать себя у отечественных потребителей.</p>
+							<div class="big-image">
+								<img class="big-image__img img--responsive" src="../media/carwash_big.jpg" alt="">
+								<p class="big-image__desc">Подпись к фотографии, подпись к фотографии </p>
+							</div>
+						</div>
+					</article>
 				</div>
-				
 			</div>
 		</div>
-		<div class="page-buffer"></div>
-	</div>
-	<footer>
-		<div class="inner">
-			<div class="footer-left">
-				<div class="footer-inner">
-					<p class="footer-title">Промышленная компания «ВСМ»</p>
-					<p><a href="#">всм.рф</a> - все права защищены © 2014</p>
+	</main>
+	
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__content">
+				<div class="pull-left">
+					
 				</div>
+				<div class="pull-right">
+					
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="footer-main">
-				<div class="footer-inner">
+			<div class="footer__content">
+				<div class="pull-left">
 					<p> 191014, г. Санкт-Петербург ,ул. Некрасова д. 60 пом. 44Н  </p>
 					<p> (812) 327-30-62, (812) 719-70-51 info@pkvsm.ru </p>
 				</div>
-			</div>
-			<div class="footer-right">
-				<div class="footer-inner">
-					<img src="http://placehold.it/190x70"/>
+				<div class="pull-right">
+					<p class="footer-title">Промышленная компания «ВСМ»</p>
+					<p><a href="#">всм.рф</a> - все права защищены © 2017</p>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</footer>
-	<!-- В конце документа подтяниваем все скрипты. jQuery, yandex и прочие-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript"> //скрипт для меню
-		$(document).ready(function(){
-			var $menu = $("#topmenu");
-			$(window).scroll(function(){
-				if ( $(this).scrollTop() > 125 && $menu.hasClass("navbar-default") ){
-					$menu.removeClass("navbar-default").addClass("navbar-fixed");
-				} else if($(this).scrollTop() <= 125 && $menu.hasClass("navbar-fixed")) {
-					$menu.removeClass("navbar-fixed").addClass("navbar-default");
-				}
-			});
-		});
-	</script>
+	<script type="text/javascript" src="/libs.js"></script>
+	<script type="text/javascript" src="/bundle.js"></script>
+	
+
 </body>
 </html>
