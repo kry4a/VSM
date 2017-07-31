@@ -20,7 +20,7 @@
 	<header class="header header--big">
 		<nav class="navbar navbar--fixed navbar--top">
 			<div class="container">
-				<button class="navbar__toggler navbar-toggler--right" type="button" data-toggle="collapse" data-target="#topmenu" aria-controls="topmenu" aria-expanded="false" aria-label="Открыть меню">
+				<button class="navbar__toggler navbar-toggler--right" type="button" data-target="#topmenu" aria-controls="topmenu" aria-expanded="false" aria-label="Открыть меню">
 					<span class="navbar-toggler__icon"></span>
 				</button>
 				<a class="navbar__brand" href="#">ПК ВСМ</a>
@@ -138,6 +138,32 @@
 						<img class="img--responsive" src="./media/cart.png"/>
 					</div>
 				</section>
+				<section class="partners row">
+						<div class="partners__text col-sm-12">
+								<h2 class="partners__title">Наши партнеры</h2>	
+						</div>
+						
+						<div class="partner col-xs-12 col-sm-4 col-md-3">
+                <div class="partner__img">
+                    <img src="./media/udor.png" alt="" class="img--responsive">
+                </div>
+            </div>
+            <div class="partner col-xs-12 col-sm-4 col-md-3">
+                <div class="partner__img">
+                    <img src="./media/pratissoli.png" alt="" class="img--responsive">
+                </div>
+            </div>
+            <div class="partner col-xs-12 col-sm-4 col-md-3">
+                <div class="partner__img">
+                    <img src="./media/catpumps.png" alt="" class="img--responsive">
+                </div>
+            </div>
+            <div class="partner col-xs-12 col-sm-4 col-md-3">
+                <div class="partner__img">
+                    <img src="./media/rplusm.png" alt="" class="img--responsive">
+                </div>
+            </div>
+        </section>
 			</div>
 		</div>
 	</main>
@@ -167,18 +193,8 @@
 			</div>
 		</div>
 	</footer>
-
-	<script type="text/javascript">
-		$('#tabs .tabs__link').click(function(e) {
-			console.log("tabs clicked");
-			$('#tabs .tabs__tab').removeClass('tabs__tab--active');
-		  $('#tabs__content .tab__content').removeClass('tab__content--active');
-		  $(this).parent().addClass('tabs__tab--active');
-		  var currentTab = $(this).attr('href');
-		  $(currentTab).addClass('tab__content--active');
-		  e.preventDefault();
-		});
-	</script>
+	<script src="./libs.js"></script>
+	<script src="./bundle.js"></script>
 </body>
 </html>
 

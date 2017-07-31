@@ -1,6 +1,25 @@
-
-
 $(document).ready(function() {
+    console.log('ready');
+
+    $(".navbar__toggler").click(function(e){
+      e.preventDefault();
+      var target = $(this).data('target');
+      var collapse = $(target);
+      collapse.toggleClass('in');
+    });
+
+    console.log('collapse');
+
+    $('.tabs__selector .tabs__link').click(function(e) {
+      $('.tabs__selector .tabs__tab').removeClass('tabs__tab--active');
+      $('.tabs__content .tab__content').removeClass('tab__content--active');
+      $(this).parent().addClass('tabs__tab--active');
+      var currentTab = $(this).attr('href');
+      $(currentTab).addClass('tab__content--active');
+      e.preventDefault();
+    });
+
+
     $('.flexslider').flexslider({
       animation: "slide",
       controlNav: "thumbnails",
