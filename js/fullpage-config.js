@@ -1,6 +1,15 @@
 $(document).ready(function() {
     console.log('ready');
 
+    var header = $('.header--small');
+    var navbar = header.find('.navbar');
+    
+    $(window).scroll(function(){
+      var scrollTop = $(window).scrollTop();
+      var headerHeight = header.outerHeight();
+      if (scrollTop>headerHeight) navbar.toggleClass('navbar--fixed')
+    });
+
     $(".navbar__toggler").click(function(e){
       e.preventDefault();
       var target = $(this).data('target');
@@ -47,8 +56,8 @@ $(document).ready(function() {
       );
       
       office_mark = new ymaps.Placemark([59.8587, 30.37619], {
-        balloonContentBody: '<p>Содержимое метки</p>', 
-        hintContent: 'Стандартный значок метки'
+        balloonContentBody: '<p style="margin-bottom:5px;">Центральный офис ПК ВСМ</p><p style="font-size:12px; margin-bottom:5px;">ул. Некрасова д.60 пом. 44Н</p>', 
+        hintContent: 'Центральный офис ПК ВСМ'
       }, {
         preset: 'twirl#blueStretchyIcon'
       });
@@ -56,11 +65,12 @@ $(document).ready(function() {
       office_mark.balloon.open();
       
       service_mark = new ymaps.Placemark([59.8587, 30.37619], {
-        balloonContentBody: '<p>Содержимое метки</p>', 
-        hintContent: 'Стандартный значок метки'
+        balloonContentBody: '<p style="margin-bottom:5px;">Сервисный центр</p><p style="font-size:12px; margin-bottom:5px;">пл. Морской Славы, д.1</p>',
+        hintContent: 'Сервисный центр<'
       }, {
         preset: 'twirl#blueStretchyIcon'
       });
+
       map_service.geoObjects.add(service_mark);
       service_mark.balloon.open();
     }

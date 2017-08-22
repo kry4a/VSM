@@ -12,11 +12,9 @@ html, body {
 
 }
 
-
 .page-buffer {
     height: 100px;
 }
-
 
 
 /* header and footer */
@@ -366,13 +364,15 @@ html, body {
 .goods {
   margin-bottom: 15px;
 }
+
 .good {
 	position: relative;
 	
 	margin-bottom: 15px;
-	padding: 0 10px;
-	cursor: pointer;
-	&__inner {
+	
+  cursor: pointer;
+	
+  &__inner {
 		position: relative;
 		background-color: #EEFAFA;	
 		border-bottom: 3px solid #C4E4E1;
@@ -412,11 +412,13 @@ html, body {
 		margin-bottom: 5px;
 
 		font-size: 16px;
+    min-height: 75px;
 	}
 
 	&__image {
 		overflow: hidden;
 		border: 1px solid #ccc;
+    display: block;
 
 		@media @xs {
 			vertical-align: top;

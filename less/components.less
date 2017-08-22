@@ -95,12 +95,13 @@
   }
   &__toggler {
     display: none;
-
     border: none;
+   
     width: 50px;
     height: 50px;
+   
     cursor: pointer;
-    
+    background: none;
     @media @xs {
       display: block;
     }
@@ -109,8 +110,16 @@
     }
   }
 }
-.navbar-toggler__icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.navbar-toggler__bar {
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .nav {
   position: relative;
@@ -119,12 +128,13 @@
 
   &__item {
     display: inline-block;
-
+    position: relative;
+    
     &--aside {
       display: block;
       border-bottom: 1px solid #d1e9e5;
-      //border-top: 1px solid #fff;
     }
+
     &--hermit {
       float: right;
       background-color: #007b6d;
@@ -137,14 +147,17 @@
       display: block;
       text-align: center;
     }
+    
+    &--dropdown {
+      display: block;
+    }
   }
 
   &__link {
     display: block;
     text-decoration: underline;
     color: #ffffff;
-    height: 100%;
-
+    
     &--top {
       line-height: 45px;
       padding: 0 15px;
@@ -170,10 +183,22 @@
         color:#183A4D;  
       }
     }
+
+    &--active {
+      color: #ffffff;
+      background-color: #7AB7B2;
+      span {
+        color: #ffffff;
+      }
+    }
   }
   
-  &__dropdown {
+  &--dropdown {
     display: none;
+    position: absolute;
+
+    background-color: rgba(44,142,130,.8);
+    z-index: 1;
   }
   
   &__title {
@@ -186,7 +211,11 @@
   }  
 }
    
-
+.dropdown:hover {
+  .nav--dropdown {
+    display: block;
+  }
+}
 
 article * {
   color:#183A4D;
@@ -418,14 +447,14 @@ article * {
 
   &--phone {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 115px 137px rgba(0, 0, 0, 0);  
+      background: url("../img/sprites.png") repeat scroll 115px 137px rgba(0, 0, 0, 0);  
       top: 5px;
       left: -25px;
     }
   }
   &--phone-white {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 85px 215px rgba(0, 0, 0, 0);
+      background: url("../img/sprites.png") repeat scroll 85px 215px rgba(0, 0, 0, 0);
       top: 5px;
       left: -25px;
     }
@@ -433,7 +462,7 @@ article * {
 
   &--email {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 135px 156px rgba(0, 0, 0, 0);
+      background: url("../img/sprites.png") repeat scroll 135px 156px rgba(0, 0, 0, 0);
       top: 5px;
       left: -25px;
     }
@@ -441,7 +470,7 @@ article * {
 
   &--fax {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 66px 140px rgba(0, 0, 0, 0);
+      background: url("../img/sprites.png") repeat scroll 66px 140px rgba(0, 0, 0, 0);
       top: 5px;
       left: -27px;
     }
@@ -450,7 +479,7 @@ article * {
   &--address {
     &:before {
       width: 25px;
-      background: url("/img/sprites.png") repeat scroll 152px 2px rgba(0, 0, 0, 0);
+      background: url("../img/sprites.png") repeat scroll 152px 2px rgba(0, 0, 0, 0);
       left: -30px;
       top: 4px;
     }
@@ -459,7 +488,7 @@ article * {
   &--address-white {
     &:before {
       width: 25px;
-      background: url("/img/sprites.png") repeat scroll 152px -22px rgba(0, 0, 0, 0);  
+      background: url("../img/sprites.png") repeat scroll 152px -22px rgba(0, 0, 0, 0);  
       left: -30px;
       top: 4px;
     }
@@ -467,7 +496,7 @@ article * {
   
   &--directions {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 155px 150px rgba(0, 0, 0, 0);
+      background: url("../img/sprites.png") repeat scroll 155px 150px rgba(0, 0, 0, 0);
       left: -25px;
       top: 8px;
     }
@@ -475,12 +504,14 @@ article * {
 
   &--yes {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 175px 35px rgba(0, 0, 0, 0);
+      left:-20px;
+      background: url("../img/sprites.png") repeat scroll 175px 35px #ffffff;
     }
   }
   &--no {
     &:before {
-      background: url("/img/sprites.png") repeat scroll 175px 54px rgba(0, 0, 0, 0);
+      left:-20px;
+      background: url("../img/sprites.png") repeat scroll 175px 54px #ffffff;
     }
   }
 }
