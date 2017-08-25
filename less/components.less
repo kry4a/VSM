@@ -452,6 +452,19 @@ article * {
       left: -25px;
     }
   }
+
+  &--basket {
+    color: #ffffff;
+    &:before {
+      background: url(../img/sprites.png) repeat scroll 35px 39px rgba(0,0,0,0);
+      top: 5px;
+      left: -34px;
+      width: 28px;
+      height: 28px;
+      top: 0px;
+    }
+  }
+
   &--phone-white {
     &:before {
       background: url("../img/sprites.png") repeat scroll 85px 215px rgba(0, 0, 0, 0);
@@ -549,15 +562,22 @@ article * {
   right: 0;
   top:0;
   
-  padding: 0 25px;
+  padding: 0 25px 0 60px;
   cursor:pointer;
   background-color: #2E978A;
   color: #ffffff;
   font-size: 16px;
   line-height: 45px;
   
+  &__link {
+    color:#ffffff;
+  }
+
   &:hover {
     background-color: #007B6D;
+    &__link {
+      color:#ffffff;
+    }
   }
 
   @media @mobiles {
