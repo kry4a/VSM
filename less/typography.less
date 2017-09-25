@@ -124,6 +124,21 @@ blockquote {
   }
 }
 
+.ul {
+  display: inline-block;
+  margin-left: 25px;
+  li {
+    color: #299790;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-bottom: 5px;
+  }
+
+  span {
+    color:#183A4D;
+  }
+}
+
 .article {
   &__preview {
 
@@ -137,9 +152,16 @@ blockquote {
 }
 
 .img {
-  &--inline {
+  &--text {
+    max-width: 200px;
+  }
+  &--left {
     float: left;
     margin-right: 15px;
+  }
+  &--right {
+    float: right;
+    margin-left: 15px;
   }
 }
 

@@ -7,7 +7,7 @@ $(document).ready(function() {
     $(window).scroll(function(){
       var scrollTop = $(window).scrollTop();
       var headerHeight = header.outerHeight();
-      if (scrollTop>headerHeight) navbar.toggleClass('navbar--fixed')
+      navbar.toggleClass('navbar--fixed',(scrollTop>headerHeight));
     });
 
     $(".navbar__toggler").click(function(e){
@@ -35,7 +35,12 @@ $(document).ready(function() {
       directionNav: false
     });
     
-    ymaps.ready(init);
+    if (typeof ymaps === "undefined") {
+      console.log('no ymaps, skip init'); 
+    } else {
+      ymaps.ready(init);  
+    }
+    
     function init () {
       map_office = new ymaps.Map('map--office', {
         center:[59.8632, 30.37619], 
