@@ -6,6 +6,13 @@ html, body {
     padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  flex:1 0 auto;
+}
 
 hr {
   margin: 5px 0;
@@ -744,4 +751,94 @@ hr {
     color:#ffffff;
     background-color: rgba(44,142,130,.75);
     font-size: 14px;
+}
+
+
+.step {
+  &__content {
+    &--bg {
+      background-color: #edfaf9;
+      padding: 15px;
+      border-bottom: 3px solid #bfe2e0;
+    }
+  }
+}
+
+.order {
+  margin-bottom: 30px;
+  &__table {
+    width:100%;
+    margin-top: 0;
+  }
+}
+
+
+.spinner {
+ display:block;
+ position:relative;
+ overflow:hidden;
+ text-align:center;
+ width:150px;
+  
+  &__button {
+    position:absolute;
+    width:40px;
+    height:30px;
+    line-height:30px;
+    color:#2A968A;
+    cursor:pointer;
+    font-weight:bold;
+
+    &--up {
+      right:0;
+    }
+
+    &--down {
+      left:0;
+    }
+
+    &:hover {
+      color:#fff;
+      background-color:#2A968A
+    }
+  }
+
+  &__input {
+    width:60px;
+    padding:0 5px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border:none;
+  }
+}
+
+.order {
+  &__remove {
+    display: block;
+    text-align: center;
+    color: #007B6D;
+    width:40px;
+    height:30px;
+
+    &:hover {
+      color:#fff;
+      background-color:#2A968A;
+    }
+  }
+}
+
+
+.alert {
+  padding: 0 5px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px 0 #d4d5d7;
+  background-color: #ffffff;
+
+  &--error {
+    border-left: 5px solid #ff4c45;
+  }
+  &--success {
+    border-left: 5px solid #54D0B8;
+  }
 }
