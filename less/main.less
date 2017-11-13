@@ -484,6 +484,26 @@ hr {
         background: url("../img/sprites.png") repeat scroll 81px 79px rgba(0, 0, 0, 0);
       }
     }
+
+    &--caliber {
+      &::before {
+        background: url("../img/sprites.png") repeat scroll 120px 77px rgba(0, 0, 0, 0);
+      }
+    }
+
+    &--diameter {
+      &::before {
+        background: url("../img/sprites.png") repeat scroll 55px 53px rgba(0, 0, 0, 0);
+      }
+    }
+
+    &--length {
+      &::before {
+        background: url("../img/sprites.png") repeat scroll 142px 71px rgba(0, 0, 0, 0);
+      }
+    }
+
+    
   }
 }
 
@@ -774,12 +794,16 @@ hr {
 
 
 .spinner {
- display:block;
- position:relative;
- overflow:hidden;
- text-align:center;
- width:150px;
-  
+  display:inline-block;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  width:150px;
+
+  @media @mobiles {
+    width: 70px;
+  }
+
   &__button {
     position:absolute;
     width:40px;
@@ -801,6 +825,11 @@ hr {
       color:#fff;
       background-color:#2A968A
     }
+    
+    @media @mobiles {
+      width: 15px;
+    }
+    
   }
 
   &__input {
@@ -810,20 +839,30 @@ hr {
     line-height:30px;
     text-align:center;
     border:none;
+
+    @media @mobiles {
+      width: 30px;
+    }
   }
 }
 
 .order {
   &__remove {
-    display: block;
+    display: inline-block;
     text-align: center;
     color: #007B6D;
     width:40px;
     height:30px;
-
+    
+    cursor: pointer;
+    line-height: 30px;
     &:hover {
       color:#fff;
       background-color:#2A968A;
+    }
+
+    @media @mobiles {
+      width: 15px;
     }
   }
 }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Главная - Промышленная компания ВСМ</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/libs.css">
+  <link rel="stylesheet" href="/bundle.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+  <![endif]-->
+  
+</head>
+<body>
+  <header class="header header--small">
+    <div class="container header__container">
+      <div class="row row--center">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="logo logo--small">
+            <a class = "logo__link" href="/" title="Промышленная компания ВСМ">
+              <img class="logo__img logo__img--small img--responsive" src="../img/vsm_logo.png"/>
+            </a>  
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="info row">
+            <div class="info__block info__block--white col-xs-12 col-lg-6">
+              <p class="phone sprite sprite--phone-white"><span>(812)</span><span>327-30-62</span></p>
+              <p class="small small--white">многоканальный</p>
+            </div>
+            <div class="info__block info__block--white col-xs-12 col-lg-6">
+              <p class="sprite sprite--address-white">ул. Некрасова д.60 пом. 44Н</p>
+              <p class="small small--white">г. Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+          <div id="cart" class="cart">Корзина</div>
+        </div>
+      </div>  
+    </div>
+  </header>
+  <main>
+  <div class="container container--content">
+    <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="http://vsm.smartdevelopers.ru/">Главная</a> / </li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="http://vsm.smartdevelopers.ru/cart/">Корзина покупок</a> / </li>
+              <li class="breadcrumbs__item">Оформление заказа</li>
+          </ul>
+    <h1 class="page__title">Оформление заказа</h1>
+    
+        <form class="order row" id="order_form">
+      <div class="step col-md-8">
+        <h3 class="step__title">Выбранные позиции</h3>
+        
+        <div class="step__content" id="order-table">
+          <table class="table table-responsive table-bordered order__table">
+            <thead>
+              <tr>
+                <th class="table__th">Наименование</th>
+                <th class="table__th">Модель</th>
+                <th class="table__th">Количество</th>
+                <th class="table__th table__th--sm"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table__row" data-cart-id="1">
+                  <td class="table__cell">ВСМ А130п</td>
+                  <td class="table__cell">а130п</td>
+                  <td class="table__cell table__cell--center">
+                    <div class="spinner">
+                        <input class="spinner__input" value="2" type="text">
+                        <span class="spinner__button spinner__button--up" href="#">+</span>
+                        <span class="spinner__button spinner__button--down" href="#">-</span>
+                    </div>
+                  </td>
+                  <td class="table__cell table__cell--center table__cell--sm">
+                      <span data-target="1" class="order__remove">x</span>
+                  </td>
+              </tr>
+              <tr class="table__row" data-cart-id="2">
+                  <td class="table__cell">ВСМ А130с</td>
+                  <td class="table__cell">а130с</td>
+                  <td class="table__cell table__cell--center">
+                    <div class="spinner">
+                        <input class="spinner__input" value="2" type="text">
+                        <span class="spinner__button spinner__button--up" href="#">+</span>
+                        <span class="spinner__button spinner__button--down" href="#">-</span>
+                    </div>
+                  </td>
+                  <td class="table__cell table__cell--center table__cell--sm">
+                      <span data-target="2" class="order__remove">x</span>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="step col-md-4">
+        <h3 class="step__title">Контактные данные</h3>
+        <div class="step__content step__content--bg">
+          <div class="input-group">
+            <input id="fullname" class="input-group__input" name="fullname" placeholder="ФИО" type="text">
+          </div>
+          <div class="input-group">
+            <input id="company" class="input-group__input" name="company" placeholder="Организация" type="text">
+          </div>
+          <div class="input-group">
+            <input id="telephone" class="input-group__input im--phone" placeholder="+7 (___) ___-__-__" name="telephone" maxlength="18" type="text">
+          </div>
+          <div class="input-group">
+            <input id="email" class="input-group__input im--mail" placeholder="E-Mail" name="email" type="text">
+          </div>
+          <div class="input-group">
+            <textarea class="input-group__text" rows="3" placeholder="Комментарий к заказу" name="comment"></textarea>
+          </div>
+          <div class="input-group">
+            <input id="privacy" name="privacy" value="1" type="checkbox">
+            <label class="input-group__label input-group__label--action" for="privacy">Я даю согласие на обработку своих персональных данных</label>
+          </div>
+          <div class="form__buttons">
+            <input class="btn btn--green btn--full" value="Оформить заказ" type="submit">
+          </div>
+        </div>
+      </div>
+    </form>
+      </div>
+</main>
+  
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="pull-left">
+          
+        </div>
+        <div class="pull-right">
+          
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="footer__content">
+        <div class="pull-left">
+          <p> 191014, г. Санкт-Петербург ,ул. Некрасова д. 60 пом. 44Н  </p>
+          <p> (812) 327-30-62, (812) 719-70-51 info@pkvsm.ru </p>
+        </div>
+        <div class="pull-right">
+          <p class="footer-title">Промышленная компания «ВСМ»</p>
+          <p><a href="#">всм.рф</a> - все права защищены © 2017</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="/libs.js"></script>
+  <script type="text/javascript" src="/bundle.js"></script>
+  
+
+</body>
+</html>
