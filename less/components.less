@@ -73,7 +73,7 @@
     max-height: 0;
     height: auto;
     transition: max-height 0.25s ease-out;
-
+    
     overflow: hidden;
 
     position: absolute;
@@ -81,15 +81,25 @@
     right: 0;
     z-index: 999999;
     background-color: #24857D;
+    
+    width:200px;
+    .nav__link {
+      text-align: left;
+      padding: 0 30px;
+    }
+  }
+
+  @media @mobile-xs {
+    width: 100%;
   }
 
   &.in {
     visibility: visible;
     height: auto;
-    margin-left: -15px;
-    margin-right: -15px;
+    
 
     max-height: 500px;
+    top:45px;
     transition: max-height 0.35s ease-in;
   }
 }
